@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class Browser {
 
     public static WebDriver firefoxBrowsing() {
-        System.setProperty("webdriver.gecko.driver", "C://Users//joyce.bastos//Documents//driver//geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "path do driver");
         WebDriver driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         return driver;
@@ -17,7 +17,7 @@ public class Browser {
 
 
     public static WebDriver chromeBrowsing() {
-        System.setProperty("webdriver.chrome.driver", "C://Users//joyce.bastos//Documents//driver//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "path do driver");
         ChromeDriver driver = new ChromeDriver();
         driver.manage().window().fullscreen();
         driver.manage().deleteAllCookies();
